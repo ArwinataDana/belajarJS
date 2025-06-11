@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <img id="gambar" src="img/one-piece-season-15-3840x2160-22064.jpg" width="100%">
+    <h1 id="kata">Hallo</h1>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        var stsgambar = false;
+        $("#gambar").click(function(){
+            if(stsgambar){
+                stsgambar = false;
+                $("#gambar").attr("src", "img/one-piece-season-15-3840x2160-22064.jpg");
+                $("#kata").text("Straw Hat Pirate");
+            }else{
+              stsgambar = true;
+                $("#gambar").attr("src", "img/raiden-shogun-5k-5120x2880-16500.jpg");
+                $("#kata").text("Raiden Shogun Inazuma");
+            }
+        })
+    </script>
+</body>
+</html>
